@@ -28,3 +28,10 @@ function replace() {
     
     itemList.replaceChild(newElement, itemList.children[0]);
 }
+
+//removeChild
+function removeCh(){
+    var coffeeList = document.getElementById("myList");
+      
+    coffeeList.removeChild(coffeeList.children[0]);
+}
