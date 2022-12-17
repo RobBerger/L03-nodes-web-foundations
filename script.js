@@ -7,3 +7,15 @@ function append(){
     // place it in our document
     document.getElementById('appendid').appendChild(newtag);
 }
+
+//insertBefore
+function insert(){
+    //identify the parent that our element will go in
+    var list = document.getElementById('newlist');
+    //create a new element
+    var newitem = document.createElement('li');
+    //add content to our element
+    newitem.innerHTML = "New List Item 1.5";
+    //place it in our document
+    list.insertBefore(newitem, list.children[1]);
+}
