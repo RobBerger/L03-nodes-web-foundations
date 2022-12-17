@@ -19,3 +19,12 @@ function insert(){
     //place it in our document
     list.insertBefore(newitem, list.children[1]);
 }
+
+//replaceChild
+function replace() {
+    var itemList = document.getElementById("myList");
+    var newElement = document.createElement("li");
+    newElement.innerHTML= "This is a NEW element- Bubble Tea";
+    
+    itemList.replaceChild(newElement, itemList.children[0]);
+}
